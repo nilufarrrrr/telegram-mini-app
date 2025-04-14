@@ -22,7 +22,7 @@ def webhook():
 @app.route('/')
 def index():
     bot.remove_webhook()
-    bot.set_webhook(url=f"https://{os.getenv('RENDER_EXTERNAL_HOSTNAME')}/{TOKEN}")
+    bot.set_webhook(url=f"https://telegram-mini-app-pjvx.onrender.com/{TOKEN}")
     return "Webhook установлен", 200
 
 if name == "__main__":
